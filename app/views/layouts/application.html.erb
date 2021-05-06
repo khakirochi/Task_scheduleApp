@@ -10,6 +10,28 @@
   </head>
 
   <body>
+    <header>
+      <div class="schedule_app_header">
+        Ruby on Rails スケジュール管理アプリ
+      </div>
+      <% if flash[:notice] %>
+        <div class="flash_notice"><%= flash[:notice] %></div>
+      <% end %>
+      
+      <% if flash[:destroy] %>
+        <div class="flash_destroy"><%= flash[:destroy] %></div>
+      <% end %>
+  
+      <% if flash[:alert] %>
+        <div class="flash_alert"><%= flash[:alert] %></div>
+      <% end %>
+
+    </header>
     <%= yield %>
+    <footer>
+      <div class="schedule_app_footer">
+        現在の日時: <%= Date.current.to_s(:date_jp)%> スケジュール合計: <%= Task.all.length %>　
+      </div>
+    </footer>
   </body>
 </html>

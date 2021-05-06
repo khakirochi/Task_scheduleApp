@@ -1,0 +1,94 @@
+.schedule_app_header {
+  padding: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3cb371;
+}
+
+.schedule_app_footer {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3cb371;
+}
+
+/*table*/
+table {
+  border-collapse: collapse
+}
+
+th, td {
+  border: 1px solid #abdec2;
+  padding: 8px;
+}
+
+.main_table tr:nth-child(even){
+  background-color: #eeeeee;
+}
+
+.main_table td {
+  text-align: center;
+}
+
+.main_table_header {
+  color: #ffffff;
+  background-color: #79cf9f;
+}
+
+.task_content th {
+  color: #ffffff;
+  background-color: #79cf9f;
+}
+
+.edit_table th {
+  padding: 10px 20px;
+}
+
+.edit_table tr {
+  padding: 10px 20px;
+}
+
+/*form*/
+textarea {
+  width: 350px;
+  height: 200px;
+}
+input {
+  width:250px;
+}
+
+/*error messages*/
+.partial_errors {
+  color:#cd5c5c;
+  font-size: 20px;
+  /*background-color: #ffcccc;
+  padding:10px;
+  margin:20px 0px;
+  */
+}
+
+
+/*flash*/
+
+.flash_notice{
+  background-color: #ffd700;
+  color:#ffffe0;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.flash_alert{
+  background-color: #ffcccc;
+  color:#cd5c5c;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.flash_destroy{
+  background-color: #ffcccc;
+  color:#cd5c5c;
+  font-size: 24px;
+  padding: 10px;
+}
